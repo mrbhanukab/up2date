@@ -33,7 +33,7 @@ then
 	echo -n -e "\033[1;34m \n 💻 Adding repository ppa:fish-shell/release-3 ..."; sudo apt-add-repository ppa:fish-shell/release-3 > /dev/null;
 	echo -n -e "\033[1;32m \n ⬇️ Installing fish..."; sudo apt-get install fish > /dev/null; 
 	echo -n -e "\033[1;34m \n 💻 Making fish is default ..."; chsh -s /usr/bin/fish > /dev/null;
-	echo -n -e "\033[1;34m \n 💻 Cloning auto-cpufreq.git ..."; git clone https://github.com/AdnanHodzic/auto-cpufreq.git > /dev/null;
+	echo -n -e "\033[1;34m \n 💻 Cloning auto-cpufreq.git ..."; cd .. && git clone https://github.com/AdnanHodzic/auto-cpufreq.git > /dev/null;
     echo -n -e "\033[1;32m \n ⬇️ Installing auto-cpufreq ..."; cd auto-cpufreq && sudo ./auto-cpufreq-installer > /dev/null;
 elif [ $os == 2 ]
 then
