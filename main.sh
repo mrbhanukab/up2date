@@ -18,7 +18,7 @@ then
 	echo -e "\033[1;31mPlease wait a few minutes, the time depends on your internet connection & pc performance. \033[1;0m⌛ \n"
 	echo -e "\033[1;36m ✅ Operating System : 'Ubuntu'"
 	echo -e "\033[1;36m 😎 User : $(whoami) \n"
-	echo -n -e "\033[1;32m \n 🧑‍🔧 Fixing Broken Install ..."; sudo apt --fix-broken install -y > /dev/null; 
+	echo -n -e "\033[1;32m \n 🧑‍🔧 Fixing Broken Install ..."; sudo apt-get --fix-broken install -y > /dev/null; 
     echo -n -e "\033[1;32m \n 💻 Updating ..."; sudo apt-get update -y > /dev/null; 
 	echo -n -e "\033[1;32m \n 💻 Upgradng ..."; sudo apt-get upgrade -y > /dev/null;
 	echo -n -e "\033[1;32m \n ⬇️ Installing Ubuntu Restricted Extras ..."; sudo apt-get install -y ubuntu-restricted-extras > /dev/null;
