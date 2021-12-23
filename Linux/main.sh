@@ -12,7 +12,7 @@ read -p 'What is Your Linux Distro? [1/2/3]:' os
 
 if [ $os == 1 ]
 then
-.ubuntu.sh
+bash ubuntu.sh
 fi
 elif [ $os == 2 ]
 then
