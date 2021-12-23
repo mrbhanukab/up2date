@@ -1,9 +1,29 @@
     echo -e "\n"
 	tput bold 1; echo "The 'newos' Programme 👾" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols)
 	echo -e "\n"
-	echo -e "\033[1;31mPlease wait a few minutes, the time is depends\ on your internet connection & pc performance. \033[1;0m⌛ \n"
+	echo -e "\033[1;31mPlease wait a few minutes, the time is depends on your internet connection & pc performance. \033[1;0m⌛ \n"
 	echo -e "\033[1;36m ✅ Operating System : 'Ubuntu'"
 	echo -e "\033[1;36m 😎 User : $(whoami) \n"
+PS3='Please enter your choice: '
+options=("Option 1" "Option 2" "Option 3" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Option 1")
+            echo "you chose choice 1"
+            ;;
+        "Option 2")
+            echo "you chose choice 2"
+            ;;
+        "Option 3")
+            echo "you chose choice $REPLY which is $opt"
+            ;;
+        "Quit")
+            break
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
 	echo -n -e "\033[1;32m \n 🧑‍🔧 Fixing Broken Install ..."; sudo apt-get --fix-broken install -y > /dev/null; 
     echo -n -e "\033[1;32m \n 💻 Updating ..."; sudo apt-get update -y > /dev/null; 
 	echo -n -e "\033[1;32m \n 💻 Upgradng ..."; sudo apt-get upgrade -y > /dev/null;
