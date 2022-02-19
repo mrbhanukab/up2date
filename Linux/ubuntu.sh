@@ -1,5 +1,5 @@
     echo -e "\n"
-	tput bold 1; echo "The 'NewOS' Programme 👾" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols)
+	tput bold 1; echo "The 'newos' Programme 👾" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols)
 	echo -e "\n"
 	echo -e "\033[1;31mPlease wait a few minutes, the time is depends on your internet connection & pc performance. \033[1;0m⌛ \n"
 	echo -e "\033[1;36m ✅ Operating System : 'Ubuntu'"
