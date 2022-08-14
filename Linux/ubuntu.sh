@@ -62,6 +62,9 @@ echo -n -e "\033[1;34m \n ⬇️ Installing v4l2loopback-dkms ..."; sudo apt ins
 echo -n -e "\033[1;34m \n ⬇️ Installing OBS ..."; sudo add-apt-repository ppa:obsproject/obs-studio && sudo apt update && sudo apt install obs-studio;
 
 echo -n -e "\033[1;34m \n ⬇️ Installing Pycharm Community ..."; sudo snap install pycharm-community --classic;
+
+echo -n -e "\033[1;34m \n ⬇️ Installing telegram ..."; sudo add-apt-repository ppa:atareao/telegram && sudo apt update && sudo apt install telegram;
+	
 	
 	echo -n -e "\033[1;34m \n 💻 Shutting Down Computer ..."; sudo shutdown -h -t 30;
 	
