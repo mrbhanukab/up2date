@@ -11,7 +11,7 @@ echo -n -e "\033[1;32m \n 💻 Upgradng ..."; sudo apt-get upgrade -y > /dev/nul
 	
 echo -n -e "\033[1;32m \n ⬇️ Installing Ubuntu Restricted Extras ..."; sudo apt-get install -y ubuntu-restricted-extras > /dev/null;
 	
-	echo -n -e "\033[1;32m \n ⬇️ Installing Gnome Tweaks ..."; sudo apt-get install -y gnome-tweaks > /dev/null;
+	echo -n -e "\033[1;32m \n ⬇️ Installing Gnome Tweaks ..."; sudo apt-get install -y gnome-tweaks && sudo apt install -y gnome-shell-extension-manager > /dev/null;
 	
 	echo -n -e "\033[1;32m \n ⬇️ Installing neofetch ..."; sudo apt-get install -y neofetch > /dev/null;
 	
@@ -68,6 +68,16 @@ echo -n -e "\033[1;34m \n ⬇️ Installing telegram ..."; sudo add-apt-reposito
 	echo -n -e "\033[1;34m \n ⬇️ Installing Zoom ..."; flatpak install flathub us.zoom.Zoom;
 	
 	echo -n -e "\033[1;34m \n ⬇️ Installing Obsidian ..."; flatpak install flathub md.obsidian.Obsidian;
+	
+		echo -n -e "\033[1;34m \n ⬇️ Installing Zip ..."; sudo apt install rar unrar p7zip-full p7zip-rar;
+		
+			echo -n -e "\033[1;34m \n ⬇️ Installing Laptop Mode Tools ..."; sudo apt install -y laptop-mode-tools;
+	
+		echo -n -e "\033[1;34m \n ⬇️ Installing Java ..."; sudo apt-get install -y openjdk-11-jdk;
+	
+		echo -n -e "\033[1;34m \n ⬇️ Installing GUI Firewall ..."; sudo apt-get install -y gufw;
+	
+		echo -n -e "\033[1;34m \n ⬇️ Installing AppImage support ..."; sudo apt install -y libfuse2;
 	
 echo -n -e "\033[1;34m \n 💻 Shutting Down Computer ..."; sudo shutdown -h -t 30;
 	
