@@ -33,7 +33,7 @@ echo -e "\033[1;31mPlease wait a few minutes, the time is depends on your intern
 	
 	echo -n -e "\033[1;34m \n ⬇️ Installing VSCode..."; chsh -s /usr/bin/fish > /dev/null && sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" && sudo apt install code;
 	
-	echo -n -e "\033[1;34m \n ⬇️ Installing Nodejs ..."; sudo apt install nodejs;
+	echo -n -e "\033[1;34m \n ⬇️ Installing Nodejs ..."; sudo apt install nodejs npm;
 	
 	echo -n -e "\033[1;34m \n ➡️ Nodejs Version :- "; node -v;
 	
@@ -46,6 +46,14 @@ echo -e "\033[1;31mPlease wait a few minutes, the time is depends on your intern
 	echo -n -e "\033[1;34m \n ➡️ Go Version :- "; go version;
 	
 		echo -n -e "\033[1;34m \n ⬇️ Installing Hugo ..."; mkdir $HOME/src && cd $HOME/src && git clone https://github.com/gohugoio/hugo.git && cd hugo && go install --tags extended;
+
+	echo -n -e "\033[1;34m \n ⬇️ Installing Yarn ..."; npm install --global yarn;
+	
+	echo -n -e "\033[1;34m \n ➡️ Yarn Version :- "; yarn --version;
+
+echo -n -e "\033[1;34m \n ⬇️ Installing pnpm ..."; npm install -g pnpm;
+	
+	echo -n -e "\033[1;34m \n ➡️ Yarn Version :- "; yarn --version;
 
 	echo -n -e "\033[1;34m \n 💻 Shutting Down Computer ..."; sudo shutdown -h -t 30;
 	
