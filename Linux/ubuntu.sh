@@ -31,11 +31,13 @@ echo -e "\033[1;31mPlease wait a few minutes, the time is depends on your intern
 	
 	echo -n -e "\033[1;34m \n 💻 Making fish is default ...";
 	
-	echo -n -e "\033[1;34m \n ⬇️ Installing VSCode..."; chsh -s /usr/bin/fish > /dev/null && sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" && sudo apt install code;
+	echo -n -e "\033[1;34m \n ⬇️ Installing VSCode..."; chsh -s /usr/bin/fish > /dev/null && sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" && sudo apt-get update && sudo apt install code;
 	
 	echo -n -e "\033[1;34m \n ⬇️ Installing Nodejs ..."; sudo apt install nodejs npm;
 	
 	echo -n -e "\033[1;34m \n ➡️ Nodejs Version :- "; node -v;
+	
+	echo -n -e "\033[1;34m \n ➡️ NPM Version :- "; npm --version;
 	
 	echo -n -e "\033[1;34m \n ⬇️ Installing Python ..."; sudo apt install python3;
 	
@@ -55,5 +57,11 @@ echo -n -e "\033[1;34m \n ⬇️ Installing pnpm ..."; npm install -g pnpm;
 	
 	echo -n -e "\033[1;34m \n ➡️ Yarn Version :- "; yarn --version;
 
+echo -n -e "\033[1;34m \n ⬇️ Installing v4l2loopback-dkms ..."; sudo apt install v4l2loopback-dkms;
+
+echo -n -e "\033[1;34m \n ⬇️ Installing OBS ..."; sudo add-apt-repository ppa:obsproject/obs-studio && sudo apt update && sudo apt install obs-studio;
+
+echo -n -e "\033[1;34m \n ⬇️ Installing Pycharm Community ..."; sudo snap install pycharm-community --classic;
+	
 	echo -n -e "\033[1;34m \n 💻 Shutting Down Computer ..."; sudo shutdown -h -t 30;
 	
