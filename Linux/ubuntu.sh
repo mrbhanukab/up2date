@@ -70,8 +70,6 @@ echo -n -e "\033[1;34m \n ⬇️ Installing telegram ..."; sudo add-apt-reposito
 	echo -n -e "\033[1;34m \n ⬇️ Installing Obsidian ..."; flatpak install flathub md.obsidian.Obsidian;
 	
 		echo -n -e "\033[1;34m \n ⬇️ Installing Zip ..."; sudo apt install rar unrar p7zip-full p7zip-rar;
-		
-			echo -n -e "\033[1;34m \n ⬇️ Installing Laptop Mode Tools ..."; sudo apt install -y laptop-mode-tools;
 	
 		echo -n -e "\033[1;34m \n ⬇️ Installing Java ..."; sudo apt-get install -y openjdk-11-jdk;
 	
@@ -79,5 +77,9 @@ echo -n -e "\033[1;34m \n ⬇️ Installing telegram ..."; sudo add-apt-reposito
 	
 		echo -n -e "\033[1;34m \n ⬇️ Installing AppImage support ..."; sudo apt install -y libfuse2;
 	
-echo -n -e "\033[1;34m \n 💻 Shutting Down Computer ..."; sudo shutdown -h -t 30;
+		echo -n -e "\033[1;34m \n ⬇️ Installing AutoCpufrq ..."; git clone https://github.com/AdnanHodzic/auto-cpufreq.git && cd auto-cpufreq && sudo ./auto-cpufreq-installer;
+
+		echo -n -e "\033[1;34m \n ⬇️ Installing MS Edge ..."; curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg && sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/ && sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list' && sudo rm microsoft.gpg && sudo apt update && sudo apt install microsoft-edge-stablemicrosoft-edge-stable;
+
+		echo -n -e "\033[1;34m \n 💻 Shutting Down Computer ..."; sudo shutdown -h -t 30;
 	
